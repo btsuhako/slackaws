@@ -1,0 +1,34 @@
+{
+  "name": "slackaws",
+  "version": "0.1.0",
+  "description": "slackaws",
+  "author": "Blake Tsuhako",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ori-slackbot/*.js"
+  },
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.3.0",
+    "chai": "^2.1.2",
+    "dirty-chai": "^1.2.2",
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.2",
+    "mocha": "^2.2.1"
+  },
+  "eslintConfig": {
+    "extends": "airbnb/legacy",
+    "env": {
+      "node": true,
+      "mocha": true
+    },
+    "rules": {
+      "func-names": 0,
+      "no-unused-vars": 0
+    }
+  }
+}

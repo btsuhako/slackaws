@@ -1,0 +1,52 @@
+{
+  "name": "handleCommand",
+  "runtime": "nodejs4.3",
+  "customName": "handleCommand",
+  "customRole": false,
+  "handler": "handler.handler",
+  "timeout": 6,
+  "memorySize": 1024,
+  "authorizer": {},
+  "custom": {
+    "excludePatterns": []
+  },
+  "endpoints": [
+    {
+      "path": "slack/slashcommand",
+      "method": "POST",
+      "type": "AWS",
+      "authorizationType": "none",
+      "authorizerFunction": false,
+      "apiKeyRequired": false,
+      "requestParameters": {},
+      "requestTemplates": {
+        "application/x-www-form-urlencoded": "{\"body\" : $input.json(\"$\")}"
+      },
+      "responses": {
+        "400": {
+          "statusCode": "400"
+        },
+        "default": {
+          "statusCode": "200",
+          "responseParameters": {},
+          "responseModels": {},
+          "responseTemplates": {
+            "application/json": ""
+          }
+        }
+      }
+    }
+  ],
+  "events": [],
+  "environment": {
+    "SERVERLESS_PROJECT": "slackaws",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}",
+    "SLACK_VERIFICATION_TOKEN": "${slack-token}"
+  },
+  "custom": {
+    "optimize": {
+      "exclude": ["aws-sdk"]
+    }
+  }
+}

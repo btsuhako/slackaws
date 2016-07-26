@@ -1,0 +1,6 @@
+{
+  "body": {
+    "token": "MY_SLACK_TOKEN",
+    "text": "help"
+  }
+}

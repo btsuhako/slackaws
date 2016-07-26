@@ -1,0 +1,36 @@
+{
+  "name": "ori-slackbot",
+  "version": "1.0.0",
+  "description": "ori-slackbot",
+  "author": "Blake Tsuhako",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ori-slackbot/*.js"
+  },
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "lambda-slack-router": "^1.2.1"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.3.0",
+    "chai": "^2.1.2",
+    "dirty-chai": "^1.2.2",
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.2",
+    "mocha": "^2.2.1",
+    "serverless-optimizer-plugin": "^2.5.1"
+  },
+  "eslintConfig": {
+    "extends": "airbnb/legacy",
+    "env": {
+      "node": true,
+      "mocha": true
+    },
+    "rules": {
+      "func-names": 0,
+      "no-unused-vars": 0
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "slackaws",
+  "custom": {},
+  "plugins": [
+    "serverless-optimizer-plugin"
+  ]
+}
