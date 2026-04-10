@@ -16,7 +16,7 @@
     "dirty-chai": "^1.2.2",
     "eslint": "^9.26.0",
     "eslint-config-airbnb": "^18.1.0",
-    "mocha": "^6.2.3"
+    "mocha": "^11.7.5"
   },
   "eslintConfig": {
     "extends": "airbnb/legacy",
