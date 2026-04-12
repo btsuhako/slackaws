@@ -9,17 +9,13 @@
     "test": "mocha",
     "lint": "eslint ori-slackbot/*.js"
   },
-  "dependencies": {},
   "devDependencies": {
-    "aws-sdk": "^2.1354.0",
     "chai": "^2.1.2",
     "dirty-chai": "^1.2.2",
     "eslint": "^9.26.0",
-    "eslint-config-airbnb": "^18.1.0",
     "mocha": "^11.7.5"
   },
   "eslintConfig": {
-    "extends": "airbnb/legacy",
     "env": {
       "node": true,
       "mocha": true
@@ -28,5 +24,9 @@
       "func-names": 0,
       "no-unused-vars": 0
     }
+  },
+  "dependencies": {
+    "@aws-sdk/client-auto-scaling": "^3.1029.0",
+    "@aws-sdk/client-elasticache": "^3.1029.0"
   }
 }
